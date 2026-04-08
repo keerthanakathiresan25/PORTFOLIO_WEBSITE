@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthana K | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'am</p>
+                    <h1 class="title">KEERTHANA K</h1>
+                    <p class="subtitle">And, I'am a <span class="highlight-role">FRONTEND DEVELOPER</span></p>
+                    <p class="description">Focused on developing responsive and user-friendly web applications using HTML, CSS, and JavaScript
+                    <div class="hero-buttons">
+                        <a href="Keerthana_K.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="keerthana_image.png" alt="Keerthana K" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card">
+                <div class="about-header">
+                    <div class="about-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="about-badge">
+                        <span class="highlight"> Frontend Developer </span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a <span class="highlight">Computer Science Engineering student</span> with a CGPA of 8.44 and an aspiring <span class="highlight">Frontend Developer</span>.
+                    </p>
+                    <p>
+                        I build responsive and user-friendly web applications using HTML, CSS, JavaScript, and React, and have basic experience working with Django for backend development.
+                    </p>
+                    <p>
+                        I have developed projects such as a 
+                        <span class="highlight">placement portal</span> 
+                        with authentication and CRUD operations, gaining practical experience in building real-world applications.
+                    </p>
+                    <p>
+                        I am currently focused on improving my full-stack development skills and looking for opportunities to work on real-world projects and grow as a developer.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3 class="stat-number" id="cgpa-number" data-target="8.44" data-original="8.44">0</h3>
+                        <p class="stat-label">CGPA</p>
+                    </div>
+                    <div class="stat clickable" onclick="scrollToSection('internships')">
+                        <h3 class="stat-number" id="internships-number" data-target="3" data-original="3">0</h3>
+                        <p class="stat-label">Internships</p>
+                    </div>
+                    <div class="stat clickable" onclick="scrollToSection('projects')">
+                        <h3 class="stat-number" id="projects-number" data-target="4" data-original="4">0</h3>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">HTML5 / CSS3</div>
+                        <div class="skill-item">JavaScript (ES6)</div>
+                        <div class="skill-item">React.js</div>
+                        <div class="skill-item">Responsive Design</div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Django</div>
+                        <div class="skill-item">MySQL</div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">Git & GitHub</div>
+                        <div class="skill-item">VS Code</div>
+                        <div class="skill-item">Postman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Federated Video Event Detection</h3>
+                    <p>Developed a Python-based federated learning system using OpenCV and TensorFlow. Implemented Quantum Hash Encryption for secure data processing across distributed clients without sharing raw video data.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Security</span>
+                    </div>
+                    <a href="https://github.com/keerthanakathiresan25/FEDERATED-VIDEO-EVENT-DETECTION_USING_QUANTUM-HASH-ENCRYPTION" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Campus Placement Portal</h3>
+                    <p>Built a role-based Django web application with job posting and application tracking. Implemented CRUD operations, session management, and role-based access control for admin, recruiter, and student panels.</p>
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>SQLite</span>
+                    </div>
+                    <a href="https://github.com/keerthanakathiresan25/DJANGO_CAMPUS_PLACEMENT_PROTAL.git" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>Created a responsive portfolio website using HTML, CSS, and vanilla JavaScript. Implemented Intersection Observer for scroll animations, typing effect for roles, and real-time number counters for achievements.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/keerthanakathiresan25/portfolio-website" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Deepfake Detection System</h3>
+                    <p>Developed a deepfake detection system using dual-stream CNN and ArcFace learning. Accurately classifies real and fake videos by extracting spatial and temporal features from video frames.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>CNN</span>
+                        <span>ArcFace</span>
+                    </div>
+                    <a href="https://github.com/keerthanakathiresan25/deepfake-detection" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="internships-grid">
+                <!-- Internship 1 -->
+                <div class="intern-card">
+                    <h3><i class="fas fa-laptop-code"></i> Backend Development Intern</h3>
+                    <p class="company">Live Stream Technologies · Coimbatore</p>
+                    <ul class="intern-details">
+                        <li>Developed backend modules using Django</li>
+                        <li>Worked with database operations and application logic</li>
+                    </ul>
+                </div>
+                <!-- Internship 2 -->
+                <div class="intern-card">
+                    <h3><i class="fas fa-code"></i> Full Stack Intern</h3>
+                    <p class="company">Litz Tech · Coimbatore</p>
+                    <ul class="intern-details">
+                        <li>Developed UI components for web applications</li>
+                        <li>Fixed minor bugs and supported development tasks</li>
+                    </ul>
+                </div>
+                <!-- Internship 3 -->
+                <div class="intern-card">
+                    <h3><i class="fas fa-mobile-alt"></i> Application Development Intern</h3>
+                    <p class="company">INFOCS TECHNOLOGIES · Coimbatore</p>
+                    <ul class="intern-details">
+                        <li>Developed and maintained application features</li>
+                        <li>Collaborated with team on project requirements</li>
+                        <li>Gained hands-on experience in application development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="cert-section">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+                    <!-- Python Programming - BITS & BYTES -->
+                    <div class="cert-card">
+                        <i class="fab fa-python"></i>
+                        <h4>Python Programming</h4>
+                        <p class="issuer">BITS & BYTES - 3 Months Course</p>
+                    </div>
+                    
+                    <!-- Java Basics - HackerRank -->
+                    <div class="cert-card">
+                        <i class="fab fa-java"></i>
+                        <h4>Java Basics</h4>
+                        <p class="issuer">HackerRank</p>
+                    </div>
+                    
+                    <!-- React.js - Novitech R&D -->
+                    <div class="cert-card">
+                        <i class="fab fa-react"></i>
+                        <h4>React.js Fundamentals</h4>
+                        <p class="issuer">Novitech R&D - 1 Month Course</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops">
+        <div class="container">
+            <h2 class="section-title">Workshops Attended</h2>
+            <div class="workshop-grid">
+                <!-- Workshop 1 -->
+                <div class="workshop-card">
+                    <div class="workshop-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="workshop-content">
+                        <h4>AI in the Digital Era</h4>
+                        <p class="workshop-org">Karpagam College of Engineering</p>
+                        <p class="workshop-desc">Exploring AI trends, machine learning concepts, and real-world applications</p>
+                        <span class="workshop-date">2023</span>
+                    </div>
+                </div>
+                <!-- Workshop 2 -->
+                <div class="workshop-card">
+                    <div class="workshop-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <div class="workshop-content">
+                        <h4>Augmented Reality Workshop</h4>
+                        <p class="workshop-org">SNS Institutions</p>
+                        <p class="workshop-desc">Understanding AR technologies and their applications in modern computing</p>
+                        <span class="workshop-date">2023</span>
+                    </div>
+                </div>
+                <!-- Workshop 3 -->
+                <div class="workshop-card">
+                    <div class="workshop-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="workshop-content">
+                        <h4>MERN Stack Development</h4>
+                        <p class="workshop-org">Coimbatore Institute of Technology</p>
+                        <p class="workshop-desc">Hands-on workshop covering MongoDB, Express, React, and Node.js stack development</p>
+                        <span class="workshop-date">2025</span>
+                    </div>
+                </div>
+                <!-- Workshop 4 -->
+                <div class="workshop-card">
+                    <div class="workshop-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="workshop-content">
+                        <h4>Make Your 1st ML Model</h4>
+                        <p class="workshop-org">Hindustan College of Engineering and Technology</p>
+                        <p class="workshop-desc">Hands-on session on building first machine learning model from scratch</p>
+                        <span class="workshop-date">2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:keerthanakathiresan25@gmail.com">keerthanakathiresan25@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+916385625831">+91 63856 25831</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Pollachi, Tamil Nadu</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/keerthanakathiresan25" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/keerthana-k-165008318/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.hackerrank.com/profile/keerthanakathi15" target="_blank"><i class="fab fa-hackerrank"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Keerthana K · Frontend Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
